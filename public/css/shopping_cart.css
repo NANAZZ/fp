@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+div.container{
+    height:1000px;
+    width:1442px;
+    margin:35px auto 0;
+}
+div.container div.cart_title{
+    width:1420px;
+    margin:0 10px;
+    padding-top:15px;
+    color:#262626;
+    font-family: "宋体";
+    font-size:20px;
+}
+
+/**************左边：购物车列表**************/
+div.container div.cart_list{
+    width:960px;
+    height:800px;
+    padding:0 10px;
+    float:left;
+}
+/**************右边：总计结算**************/
+div.container div.cart_total{
+    width:480px;
+    height:800px;
+    float:left;
+}

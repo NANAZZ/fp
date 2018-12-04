@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/products.css">
+    <script src="js/vue.js"></script>
+    <script src="js/products.js"></script>
+    <title>products</title>
+</head>
+<body>
+<!-- <div style="width:100%">
+<div style="width:2000px"> -->
+    <div id="container">
+        <!--左边：导航栏-->
+        <div class="nav">
+            <h3 class="nav_title1">按类别浏览：</h3>
+            <ul>
+                <li><a href="#" class="first_special">首发新款</a></li>
+                <li><a href="#">本日新品</a></li>
+                <li><a href="#">本周新品</a></li>
+                <li><a href="#">Free People × 雎晓雯</a></li>
+                <li><a href="#">新品上衣</a></li>
+                <li><a href="#">新品毛衣</a></li>
+                <li><a href="#">新品夹克</a></li>
+                <li><a href="#">新品裤装</a></li>
+                <li><a href="#">新品内衣</a></li>
+                <li><a href="#">新品配饰</a></li>
+                <li><a href="#">新品鞋履</a></li>
+                <li><a href="#">新品美颜</a></li>
+                <li><a href="#">新品运动</a></li>
+                <li><a href="#">新品泳装</a></li>
+                <li><a href="#">视觉画册</a></li>
+                <li><a href="#">超小号XXS</a></li>
+                <li><a href="#">热销补货</a></li>
+            </ul>
+            <h3 class="nav_title2">筛选：</h3>
+            <div class="nav_select">
+                <span>颜色</span>
+                <img src="img/products/icon-filter-plus.svg">
+            </div>
+            <table class="nav_color_table" style="display:none">
+                <tr>
+                    <td>黑色</td>
+                    <td>银色</td>
+                </tr>
+                <tr>
+                    <td>多色</td>
+                    <td>黄色</td>
+                </tr>
+                <tr>
+                    <td>金色</td>
+                    <td>橘色</td>
+                </tr>
+                <tr>
+                    <td>紫色</td>
+                    <td>灰色</td>
+                </tr>
+                <tr>
+                    <td>棕色</td>
+                    <td>驼色</td>
+                </tr>
+                <tr>
+                    <td>绿色</td>
+                    <td>粉色</td>
+                </tr>
+                <tr>
+                    <td>红色</td>
+                    <td>白色</td>
+                </tr>
+                <tr>
+                    <td>蓝色</td>
+                    <td></td>
+                </tr>
+            </table>
+            <div class="nav_select" style="border-top:none">
+                <span>尺码</span>
+                <img src="img/products/icon-filter-plus.svg">
+            </div>
+            <table class="nav_size_table" style="display:none">
+                <tr>
+                    <td>XXS</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>XS</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+            <div class="nav_select" style="border-top:none">
+                <span>价格</span>
+                <img src="img/products/icon-filter-plus.svg">
+            </div>
+            <table class="nav_price_table" style="display:none">
+                <tr>
+                    <td>￥150 - ￥300</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>￥300 - ￥600</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>￥600 - ￥1200</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>￥1200 - ￥3000</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>高于￥3000</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </table>
+        </div>
+        <!--右边：分页-->
+        <div class="page">
+            <div class="first_line">
+                <div class="products_title">
+                    <h1>首发新款</h1>
+                    <h6>715个结果</h6>
+                </div>
+                <div class="products_option_select">
+                    <select name="" id="">
+                        <option value="" selected>精选</option>
+                        <option value="">价格从低到高</option>
+                        <option value="">价格从高到低</option>
+                        <option value="">新品</option>
+                        <option value="">评分-从高到低</option>
+                        <option value="">A-Z</option>
+                        <option value="">Z-A</option>
+                    </select>
+                    <div class="products_page_list">
+                        <img src="img/products/icon_left_gray.png" alt="">
+                        <span>1&nbsp;/&nbsp;<span>8</span></span>
+                        <img src="img/products/icon_right_black.png" alt="">
+                    </div>
+                </div> 
+            </div>
+            <div class="products_list">
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_list_item">
+                    <div class="product_pic"><img src="img/products/001.jpg" alt=""></div>
+                    <div class="product_title"><span>Crystal Clear迷你连衣裙</span></div>
+                    <div class="product_price"><span>¥1,270.00</span></div>
+                </div>
+                <div class="products_page_list bottom_page">
+                    <img src="img/products/icon_left_gray.png" alt="">
+                    <span>1&nbsp;/&nbsp;<span>8</span></span>
+                    <img src="img/products/icon_right_black.png" alt="">
+                </div>
+                <div class="serious_description">
+                    <h2 class="serious_description_title">连衣裙——可爱波希米亚连衣裙和夏日连衣裙</h2>
+                    <p>Free People女士连衣裙系列，展现你的完美体型。从适合夏季海滩的连衣裙到适宜秋冬的波希米亚风格连衣裙和针织连衣裙，应有尽有。无论何种场合，你都能在这里找到适合自己的飘逸、可爱的连衣裙。我们的波希米亚系列具有各种配色，从经典的娇小黑色连衣裙，到吸人眼球的红色和维多利亚白色，多种精心准备的完美配色，总有一款适合你的心情。需要一款办公休闲连衣裙？挑选一件我们的办公室连衣裙，搭配可爱夹克，尽显丽人风采。想要参加派对？我们的特别派对礼服有亮片装饰，典雅飘逸、独具一格，让每一位女孩穿出最漂亮的自己！Free People还为寻找完美波希米亚风格新娘特别定制完美礼服。你还可以选购我们广受欢迎的设计师的作品，比如：Jen's Pirate Booty、Nightcap、Shakuhachi和For Love and Lemons。 每一位Free People女孩都有自己独特的风格。你或许是一位钟爱懒散宽松长裙的休闲型女士、一位热爱独特装饰的波希米亚牧场女孩，或者一位特别喜欢褶边和花边的甜美女孩。当然，别忘了人见人爱的Sandy，她总喜欢穿着衬衫式连衣裙，在海滩上嬉戏浪花。Ginger则是一位可爱、随和的女孩，紧身连衣裙是她的最爱。当她穿着带有亮片、金属光泽或独特印花连衣裙出现，所有人都会驻足欣赏，这就是Ginger。不管你是哪一类女孩，我们都有适合你的完美连衣裙装</p>
+                </div>
+            </div>
+            
+        <!-- </div>
+    </div> -->
+</div>
+</div>
+</body>
+</html>

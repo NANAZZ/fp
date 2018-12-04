@@ -1,0 +1,162 @@
+/* 登录 */
+.parent{
+    position:relative;
+}
+.parent img{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:10;
+}
+.login_bg{
+    width:1920px;
+    height:5000px;
+    background: rgba(255,255,255,.9);
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:2000;
+    /* float: left; */
+}
+.login_border{
+    width:475px;
+    height:590px;
+    background:#fff;
+    position:absolute;
+    top: 135px;
+    left:700px;
+    padding:48px 0;
+    cursor: default;
+}
+.login_border table{
+    margin: 0 auto;
+}
+.login_border table tr td{
+    width:378px;
+    text-align: center;
+}
+.login_close{
+    position: absolute;
+    left: 430px;
+    top: -13px;
+    font-size: 50px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.login_close:hover{
+    color:#d52975;
+}
+.login_title{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "宋体";
+    color: #262626;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e4e4e4;
+}
+.login_border table tr td.login_email,.login_border table tr td.login_password{
+    margin-top:20px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #262626;
+    display: block;
+    text-align:left;
+}
+.login_border table tr td span{
+    color:#d52975;
+}
+.login_input{
+    color: #262626;
+    width: 100%;
+    height: 36px;
+    padding: 0 10px;
+    margin-bottom: 0;
+    border: 1px solid #757575;
+    outline: none;
+}
+.login_border table tr td.login_forget_password{
+    margin-top:5px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #262626;
+    display: block;
+    text-align:right;
+    cursor: pointer;
+}
+.login_border table tr td.login_forget_password:hover{
+    color:#d52975;
+}
+.btn_login{
+    width: 40%;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-size:12px;
+    text-align: center;
+    color: #262626;
+    background-color: #ffafaf;
+    cursor: pointer;
+    display:inline-block;
+}
+.btn_login_false{
+    text-decoration: underline;
+    color: #262626;
+    font-size:12px;
+    color: #262626;
+    cursor: pointer;
+    margin: 15px 0 20px 0;
+    padding-left: 40px;
+}
+.btn_login_false:hover{
+    color:#262626;
+    text-decoration: none;
+}
+.btn_login:hover{
+    color:#262626;
+    text-decoration: none;
+    background:#e6ac98;
+}
+.btn_create{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 12px 0;
+    border: 1px solid #262626;
+    outline: none;
+    font-size:12px;
+    text-align: center;
+    color: #262626;
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.btn_create:hover{
+    color:#fff;
+    background: #262626;
+}
+.login_border table tr td.register_email_dateup{
+    padding-top:20px;
+    font-size: 12px;
+    color: #262626;
+    text-align: left;
+}
+.btn_register_create{
+    margin-top:20px;
+}
+.register_msg{
+    font-size:13px;
+    font-style: italic;
+    color:#262626;
+}
+.register_msg u{
+    font-size: 12px;
+    cursor: pointer;
+}
+.register_msg u:hover{
+    text-decoration:none;
+}

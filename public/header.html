@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/header.js"></script>
+    <title>Header</title>
+</head>
+<body>
+<div style="width:100%">
+<div style="width:1920px">
+<div id="header">
+    <!--头部提升-->
+    <div class="header_promote">
+        <div class="header_promote_font">
+            <p class="header_promote_p1">
+                即时免邮！
+            </p>
+            <p class="header_promote_p2">
+                即刻起，订单满￥199，免国际运费。支持支付宝。
+            </p>
+            <a href="#" class="header_promote_a">
+                立即选购
+            </a>
+        </div>
+    </div>
+    <!--header-->
+    <header>
+        <div class="header">
+            <ul class="header_left">
+                <li class="header_left_first"><a href="#">官方微博</a></li>
+                <li class="header_left_second">|</li>
+                <li class="header_left_third"><a href="#">FP时尚社区</a></li>
+            </ul>
+
+            <a href="#"><img src="img/header/logo.svg" class="header_logo"></a>
+
+            <ul class="header_right">
+                <li class="header_right_first">
+                    <a href="#">
+                        <div class="img_search">
+                            <img src="img/header/search.png">
+                        </div>
+                        搜索
+                    </a>
+                    <div style="display:none">
+                        <img src="img/header/search.png">
+                        <input type="text" placeholder="搜索">
+                    </div>
+                </li>
+                <li class="header_right_second"><a href="#">中国(￥)</a></li>
+                <li class="header_right_third"><a href="#">登录/注册</a></li>
+                <div class="login_bg" style="display:none">
+                    <div class="login_border" id="login_user">
+                        <div class="login_close">×</div>
+                        <table>
+                            <tr>
+                                <td class="login_title">登录</td>
+                            </tr>
+                            <!-- <tr>
+                                <td style="border-bottom:1px solid #e4e4e4;padding-top:10px;"></td>
+                            </tr> -->
+                            <tr>
+                                <td class="login_email">电子邮件&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="login_password">密码&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="login_forget_password">忘记密码</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="btn_login">登录</a>
+                                    <a href="#" class="btn_login_false">取消</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="login_title">首次光临？立即加入！</td>
+                            </tr>
+                            <!-- <tr>
+                                <td style="border-bottom:1px solid #e4e4e4;padding-top:10px;"></td>
+                            </tr> -->
+                            <tr>
+                                <td class="btn_create" id="btn_create1">创建一个账户</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="login_border" id="register_user" style="display:none">
+                        <div class="login_close">×</div>
+                        <table>
+                            <tr>
+                                <td class="login_title">创建一个账户</td>
+                            </tr>
+                            <!-- <tr>
+                                <td style="border-bottom:1px solid #e4e4e4;padding-top:10px;"></td>
+                            </tr> -->
+                            <tr>
+                                <td class="login_email">名字（拼音）&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="login_email">电子邮件&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="login_password">密码&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="login_password">密码确认&nbsp;<span>*</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="login_input"></td>
+                            </tr>
+                            <tr>
+                                <td class="register_email_dateup">您希望收到专享电子邮件更新吗？</td>
+                            </tr>
+                            <tr>
+                                <td class="register_email_dateup">
+                                    <input type="checkbox">&nbsp;点击加入Free People电子邮件订阅名单
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="btn_login btn_register_create">创建</a>
+                                    <a href="#" class="btn_login_false btn_register_create">取消</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="register_msg">创建账户即表示，您同意Free People的<u>使用条款</u>及<u>隐私条款</u>。</td>
+                            </tr>
+                            <!-- <tr>
+                                <td style="border-bottom:1px solid #e4e4e4;padding-top:10px;"></td>
+                            </tr> -->
+                            <tr>
+                                <td class="btn_create" id="btn_create2">登录</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>  
+                <li class="header_right_forth">
+                    <a href="#">
+                        <div class="img_shopping_car">
+                            <img src="img/header/shopping_car.png">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <header>
+    <!--nav-->
+    <nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#" class="nav_a1" data-target="#nav-1">首发新款</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a2" data-target="#nav-2">服装</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a3" data-target="#nav-3">连衣裙</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a4" data-target="#nav-4">牛仔裤</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a5" data-target="#nav-5">鞋履</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a6" data-target="#nav-6">外套</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a7" data-target="#nav-7">配饰</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a8" data-target="#nav-8">内衣</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a9" data-target="#nav-9">美容和养颜</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a10">加小码XXS</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_a11" data-target="#nav-10">运动系列</a>
+                    <div></div>
+                </li>
+                <li>
+                    <a href="#" class="nav_special" data-target="#nav-11">促销优惠</a>
+                    <div></div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <!-- 首发新款 -->
+            <div class="nav_detail" id="nav-1">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>本日新品</li>
+                            <li>本周新品</li>
+                            <li>Free People × 雎晓雯</li>
+                            <li>新品上衣</li>
+                            <li>新品毛衣</li>
+                            <li>新品夹克</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>新品裤装</li>
+                            <li>新品内衣</li>
+                            <li>新品配饰</li>
+                            <li>新品鞋履</li>
+                            <li>新品美颜</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>新品运动</li>
+                            <li>新品泳装</li>
+                            <li>视觉画册</li>
+                            <li>超小号XXS</li>
+                            <li>热销补货</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>隆重推出：曲线牛仔系列</li>
+                            <li>秋日穿搭指南</li>
+                            <li>活力焕集</li>
+                            <li>热销补货</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 服装 -->
+            <div class="nav_detail" id="nav-2">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>新品服装</li>
+                            <li>连衣裙</li>
+                            <li>上衣和T恤</li>
+                            <li>运动衫和套头衫</li>
+                            <li>毛衣</li>
+                            <li>和服式外套</li>
+                            <li>外套</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>牛仔裤</li>
+                            <li>裤装</li>
+                            <li>半身裙</li>
+                            <li>短裤</li>
+                            <li>连体裤</li>
+                            <li>连体短裤</li>
+                            <li>套装</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>连体紧身衣</li>
+                            <li>泳装</li>
+                            <li>无尽夏日系列</li>
+                            <li>FP Beach</li>
+                            <li>顾客首选</li>
+                            <li>热销补货服装</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>层搭小铺</li>
+                            <li>品牌聚焦:Wrangler</li>
+                            <li>毛衣穿搭</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 连衣裙 -->
+            <div class="nav_detail" id="nav-3">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>新品裙装</li>
+                            <li>连衣长裙</li>
+                            <li>中长款连衣裙</li>
+                            <li>迷你短连衣裙</li>
+                            <li>紧身连衣裙</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>日常连衣裙</li>
+                            <li>派对礼服</li>
+                            <li>晚装连衣裙</li>
+                            <li>印花连衣裙</li>
+                            <li>白色连衣裙</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>黑色连衣裙</li>
+                            <li>毛衣连衣裙</li>
+                            <li>套装</li>
+                            <li>连衣裤</li>
+                            <li>热销补货裙装</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>派对礼服特辑</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 牛仔裤 -->
+            <div class="nav_detail" id="nav-4">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>新品牛仔裤</li>
+                            <li>曲线牛仔</li>
+                            <li>喇叭牛仔裤</li>
+                            <li>高腰牛仔裤</li>
+                            <li>紧身牛仔裤</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>阔腿牛仔裤</li>
+                            <li>男友式牛仔裤</li>
+                            <li>直筒牛仔裤</li>
+                            <li>九分喇叭牛仔裤</li>
+                            <li>工装裤</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>毛边短裤</li>
+                            <li>牛仔夹克</li>
+                            <li>顾客挚爱</li>
+                            <li>热销补货牛仔裤</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>隆重推出：曲线牛仔系列</li>
+                            <li>We The Free牛仔系列</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 外套 -->
+            <div class="nav_detail" id="nav-5">
+                <div class="row detail_list">
+                    <div class="col-4">
+                        <ul>
+                            <li>新品夹克</li>
+                            <li>风衣&棉服</li>
+                            <li>牛仔夹克</li>
+                            <li>西装外套</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>个性夹克</li>
+                            <li>实用夹克</li>
+                            <li>休闲夹克</li>
+                            <li>长大衣和防尘服</li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <ul>
+                            <li>皮革和麂皮夹克</li>
+                            <li>仿皮和人造毛外套</li>
+                            <li>机车夹克</li>
+                            <li>热销补货外套</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 鞋履 -->
+            <div class="nav_detail" id="nav-6">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>所有鞋履和袜类</li>
+                            <li>新品鞋履</li>
+                            <li>靴子</li>
+                            <li>平底鞋和休闲鞋</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>木底鞋</li>
+                            <li>运动鞋</li>
+                            <li>高跟鞋和坡跟鞋</li>
+                            <li>凉鞋</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>袜子</li>
+                            <li>拖鞋袜</li>
+                            <li>顾客首选</li>
+                            <li>热销补货鞋履</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>品牌甄选：鞋履</li>
+                            <li>FP Collection</li>
+                            <li>环保皮鞋履</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 配饰 -->
+            <div class="nav_detail" id="nav-7">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>新品配饰</li>
+                            <li>首饰</li>
+                            <li>包袋</li>
+                            <li>帽子</li>
+                            <li>手套</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>太阳镜</li>
+                            <li>围巾</li>
+                            <li>腰带</li>
+                            <li>和服式外套</li>
+                            <li>袜子</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>美发与美容</li>
+                            <li>电子配件</li>
+                            <li>御寒配饰</li>
+                            <li>顾客首选</li>
+                            <li>热销补货配饰</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>趋势：天然&金色</li>
+                            <li>趋势：树脂首饰</li>
+                            <li>FP Collection包袋</li>
+                            <li>必备迷你配饰</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 内衣 -->
+            <div class="nav_detail" id="nav-8">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>所有内衣</li>
+                            <li>新品内衣</li>
+                            <li>文胸</li>
+                            <li>内裤</li>
+                            <li>衬裙</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>上衣</li>
+                            <li>下装</li>
+                            <li>连体紧身衣</li>
+                            <li>连体紧身衣和连体短裤</li>
+                            <li>长袍和睡衣</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>套装</li>
+                            <li>无痕内衣</li>
+                            <li>FP 独家</li>
+                            <li>顾客首选</li>
+                            <li>热销补货内衣</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>趋势聚焦：裸色浪漫</li>
+                            <li>趋势：性感迷人</li>
+                            <li>趋势：璀璨星光</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 美容和养颜 -->
+            <div class="nav_detail" id="nav-9">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>所有美容和养颜</li>
+                            <li>新品美颜</li>
+                            <li>健康养生</li>
+                            <li>彩妆</li>
+                            <li>护肤</li>
+                            <li>身体</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>防晒</li>
+                            <li>美发护发</li>
+                            <li>口腔护理</li>
+                            <li>香氛</li>
+                            <li>美容工具</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>水晶</li>
+                            <li>旅行必备美妆</li>
+                            <li>自我关爱</li>
+                            <li>夜间养颜</li>
+                            <li>热销补货美颜产品</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>自我关爱指南</li>
+                            <li>植物美容</li>
+                            <li>冬季美肤</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 运动系列 -->
+            <div class="nav_detail" id="nav-10">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>所有运动</li>
+                            <li>新品运动</li>
+                            <li>文胸</li>
+                            <li>上衣</li>
+                            <li>下装</li>
+                            <li>帽衫&运动衫</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>连体装</li>
+                            <li>运动必备</li>
+                            <li>营养补给</li>
+                            <li>轻量有氧</li>
+                            <li>活力燃脂</li>
+                            <li>运动休闲</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>瑜伽装</li>
+                            <li>舞蹈</li>
+                            <li>健身</li>
+                            <li>跑步</li>
+                            <li>顾客首选</li>
+                            <li>热销补货运动服饰</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>印花&图案</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 促销优惠 -->
+            <div class="nav_detail" id="nav-11">
+                <div class="row detail_list">
+                    <div class="col-3">
+                        <ul>
+                            <li>促销优惠新品</li>
+                            <li>全部促销商品</li>
+                            <li>促销优惠连衣裙</li>
+                            <li>促销优惠上衣</li>
+                            <li>促销优惠毛衣</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>促销优惠夹克和外套</li>
+                            <li>促销优惠下装</li>
+                            <li>促销优惠内衣</li>
+                            <li>促销优惠配饰</li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <ul>
+                            <li>促销优惠鞋履</li>
+                            <li>促销优惠运动产品</li>
+                            <li>促销优惠泳装</li>
+                            <li>促销优惠海滩夏日系列</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 last_line">
+                        <ul>
+                            <li>当季精选</li>
+                            <li>150元以下促销商品</li>
+                            <li>400元以下促销商品</li>
+                            <li>800元以下促销商品</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+</div>
+</div>
+</body>
+</html>

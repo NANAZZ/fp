@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+}
+#container{
+    width:1454px;
+    padding-top:65px;
+    margin:0 auto;
+}
+/***********左边：导航栏***********/
+div.nav{
+    width:240px;
+    font-size:12px;
+    color:#262626;
+    float:left;
+    padding-left:10px;
+}
+div.nav h3.nav_title1{
+    font-weight: 400;
+    color:#757575;
+    border-bottom:1px solid #F0F0F0;
+    padding-bottom: 15px;
+}
+div.nav ul li a.first_special{
+    display:block;
+    color:#D52975;
+    padding-top:15px;
+}
+div.nav ul li{
+    padding-bottom:20px;
+}
+div.nav ul li:not(:first-child){
+    padding-left:10px;
+}
+div.nav ul li a{
+    color:#262626;
+}
+div.nav ul li a:hover{
+    color:#D52975;
+}
+div.nav ul li:last-child{
+    margin-bottom:70px;
+}
+/* 选择项 */
+div.nav h3.nav_title2{
+    font-weight: 400;
+    color:#757575;
+    margin-bottom: 20px;
+}
+div.nav_select{
+    border:1px solid #F0F0F0;
+    width:145px;
+    height:50px;
+    display:flex;
+    justify-content: space-around;
+}
+div.nav_select img{
+    width:12px;
+}
+div.nav_select span{
+    display: inline-block;
+    line-height:50px;
+}
+table.nav_color_table{
+    border-collapse: collapse;
+}
+table.nav_color_table tr td{
+    border:1px solid #F0F0F0;
+    width:72px;
+    height:36px;
+    text-align: center;
+}
+table.nav_size_table{
+    border:1px solid #F0F0F0;
+    width: 147px;
+}
+table.nav_size_table tr td{
+    width:70px;
+    height:36px;
+    text-align: center;
+}
+table.nav_price_table{
+    border:1px solid #F0F0F0;
+    width: 145px;
+    display: flex;
+    justify-content: space-around;
+}
+table.nav_price_table tr td{
+    height:36px;
+    text-align: center;
+}
+table.nav_price_table tr td:first-child{
+    text-align:left;
+}
+table.nav_color_table tr:first-child td,table.nav_size_table,table.nav_price_table{
+    border-top:none;
+}
+/***********右边：分页***********/
+div.page{
+    width:1200px;
+    float:left;
+}
+div.page div.first_line{
+    display:flex;
+    justify-content: space-between;
+}
+div.page div.first_line div.products_title{
+    display:flex;
+    justify-content:flex-start;
+    margin-bottom:30px;
+}
+div.page div.first_line div.products_option_select{
+    display:flex;
+    justify-content:flex-end;
+}
+div.page div.first_line div.products_title h1{
+    font-size: 22px;
+    font-family: "宋体";
+    font-weight: 400;
+    margin-right:20px;
+    padding-left: 10px;
+    color:#262626;
+}
+div.page div.first_line div.products_title h6{
+    font-size: 12px;
+    font-family: "微软雅黑";
+    font-weight: 400;
+    line-height: 32px;
+    color:#757575;
+}
+div.page div.first_line div.products_option_select select{
+    width:200px;
+    height:40px;
+    border-color: #757575;
+    border-radius: 5px;
+    outline: none;
+    margin-right:30px;
+}
+div.page div.first_line div.products_option_select select:focus{
+    border-color:#D52975;
+}
+.products_page_list{
+    margin-right:10px;
+}
+.products_page_list img{
+    margin-top: 12px;
+    vertical-align: bottom;
+}
+.products_page_list span{
+    font-family: -webkit-pictograph;
+    color: #757575;
+    display: inline-block;
+    vertical-align: text-top;
+    font-size: 16px;
+}
+.products_page_list span span{
+    font-size: 20px;
+}
+/* 商品列表 */
+div.products_list_item{
+    width:280px;
+    padding:0 10px;
+    margin-bottom:30px;
+    float:left;
+}
+div.products_list div.product_pic img{
+    width:280px;
+}
+div.products_list div.product_title{
+    font-size: 16px;
+    text-align: center;
+    margin-top:10px;
+}
+div.products_list div.product_price{
+    font-size: 12px;
+    text-align: center;
+    margin-top:10px;
+}
+div.bottom_page{
+    float:right;
+}
+div.serious_description{
+    width:1180px;
+    padding:0 10px;
+    clear:both;
+    padding-top:70px;
+}
+div.serious_description h2{
+    font-weight:400;
+    border-top:1px solid #E4E4E4;
+    padding-top:20px;
+    font-family:"宋体";
+    color:#262626;
+}
+div.serious_description p{
+    padding-top:15px;
+    font-size:12px;
+    color:#262626;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
